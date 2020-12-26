@@ -21,7 +21,7 @@ cm = 0.3937008
 # 使用with方式隔离绘图与函数
 with plt.style.context(['science','cn']):
     # fig, ax = plt.subplots()
-    fig, ax = plt.subplots(figsize=(6.5*cm, 5*cm)) # 设置图片尺寸，厘米为单位
+    fig, ax = plt.subplots(figsize=(9*cm, 6.5*cm)) # 设置图片尺寸，厘米为单位
 
     # 绘图
     ax.plot(d, y1, label=r'$\rm{Air}$')
@@ -32,7 +32,7 @@ with plt.style.context(['science','cn']):
 
     # 设置坐标轴标签 使用Latex渲染
     ax.set_xlabel(r'$\rm{The\;distance\;(mm)}$')
-    ax.set_ylabel(r'给风洞$H_x\;\rm{(A/m)}$')
+    ax.set_ylabel(r'$\frac{sin(\theta)}{H_x}\;\rm{(A/m)}$')
 
     # 设置坐标轴范围和刻度
     ax.set_xlim([0, y])

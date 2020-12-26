@@ -14,7 +14,7 @@ cm = 0.3937008
 
 with plt.style.context(['science','cn']):
     # fig, ax = plt.subplots()
-    fig, ax = plt.subplots(figsize=(6*cm, 5*cm))
+    fig, ax = plt.subplots(figsize=(9*cm, 6.5*cm))
     ax.plot(data['磁化电流'], data['开缝'],'-o',markersize = 3, label='开缝')
     ax.plot(data['磁化电流'], data['空气'],'-^',markersize = 3, label='空气')
     ax.plot(data['磁化电流'], data['钢板'],'-s',markersize = 3, label='钢板')

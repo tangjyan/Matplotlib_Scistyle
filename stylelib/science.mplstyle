@@ -47,7 +47,7 @@ font.serif : cmr10
 font.family : serif
 mathtext.fontset : cm
 text.latex.preamble : \usepackage{amsmath}
-font.size : 9
+font.size : 12
 
 # font.size : 9
 # font.serif : Times New Roman

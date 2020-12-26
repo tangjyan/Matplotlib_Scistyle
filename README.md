@@ -36,5 +36,5 @@ plt.show()
 
 These are drawn using the Science style
 
-![示例图](https://github.com/S-Kee/Matplotlib_Scistyle/blob/master/fig1.svg) ![示例图](https://github.com/S-Kee/Matplotlib_Scistyle/blob/master/fig14b.svg)
+![示例图](https://github.com/S-Kee/Matplotlib_Scistyle/blob/master/fig1.svg)    ![示例图](https://github.com/S-Kee/Matplotlib_Scistyle/blob/master/fig14b.svg)
 

@@ -11,7 +11,7 @@ plt.style.use('science')
 
 For example:
 
-```
+```python
 import matplotlib.pyplot as plt
 import numpy as np
 

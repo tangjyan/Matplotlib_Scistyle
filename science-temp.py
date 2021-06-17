@@ -28,7 +28,7 @@ with plt.style.context(['science','cn']):
     ax.plot(d, y2, label=r'$\rm{Iron}$')
 
     # 设置图例
-    ax.legend(fontsize=9)
+    ax.legend(fontsize=12)
 
     # 设置坐标轴标签 使用Latex渲染
     ax.set_xlabel(r'$\rm{The\;distance\;(mm)}$')
@@ -38,8 +38,8 @@ with plt.style.context(['science','cn']):
     ax.set_xlim([0, y])
     ax.set_ylim([0, 0.5])
     # 此处不能使用ax.xticks的方式，会报错
-    plt.xticks(np.arange(0, y+0.01, 0.2), fontproperties='cmr10')
-    plt.yticks(np.arange(0, 0.5+0.01, 0.1), fontproperties='cmr10')
+    plt.xticks(np.arange(0, y+0.01, 0.2), fontproperties='Times New Roman')
+    plt.yticks(np.arange(0, 0.5+0.01, 0.1), fontproperties='Times New Roman')
  
     # 保存图片
     # plt.subplots_adjust(left=0.2, right=0.95, bottom=0.2, top=0.95)

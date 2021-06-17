@@ -26,8 +26,8 @@ with plt.style.context(['science','cn']):
     ax.set_xlim([0, max(data['磁化电流'])])
     ax.set_ylim([0, 1.2*data.iloc[:,1:4].stack().max()])
     
-    plt.yticks(fontproperties='cmr10')
-    plt.xticks(fontproperties='cmr10')
+    plt.yticks(fontproperties='Times New Roman')
+    plt.xticks(fontproperties='Times New Roman')
  
     # plt.subplots_adjust(left=0.21, right=0.95, bottom=0.2, top=0.95)
     fig.savefig('fig1.svg', dpi=600)

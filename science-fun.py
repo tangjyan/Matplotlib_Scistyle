@@ -19,7 +19,7 @@ cm = 0.3937008
 # plt.style.use('science')
 
 # 使用with方式隔离绘图与函数
-with plt.style.context(['science','cn']):
+with plt.style.context(['science']):
     # fig, ax = plt.subplots()
     fig, ax = plt.subplots(figsize=(9*cm, 6.5*cm)) # 设置图片尺寸，厘米为单位
 
@@ -37,9 +37,14 @@ with plt.style.context(['science','cn']):
     # 设置坐标轴范围和刻度
     ax.set_xlim([0, y])
     ax.set_ylim([0, 0.5])
+    
     # 此处不能使用ax.xticks的方式，会报错
-    plt.xticks(np.arange(0, y+0.01, 0.2), fontproperties='Times New Roman')
-    plt.yticks(np.arange(0, 0.5+0.01, 0.1), fontproperties='Times New Roman')
+    # plt.xticks(np.arange(0, y+0.01, 0.2), fontproperties='Times New Roman')
+    # plt.yticks(np.arange(0, 0.5+0.01, 0.1), fontproperties='Times New Roman')
+
+    #plt.MaxNLocator()设置最多的刻度数量
+    ax.xaxis.set_major_locator(plt.MaxNLocator(5))
+    ax.yaxis.set_major_locator(plt.MaxNLocator(5))
  
     # 保存图片
     # plt.subplots_adjust(left=0.2, right=0.95, bottom=0.2, top=0.95)

@@ -30,7 +30,7 @@ ytick.minor.visible : True
 ytick.right : True
 
 # Set line widths
-axes.linewidth : 0.5
+axes.linewidth : 1
 grid.linewidth : 0.5
 lines.linewidth : 1.5
 

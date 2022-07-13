@@ -8,8 +8,10 @@ y1=np.sin(x)
 y2=np.cos(x)
 
 fig, ax = plt.subplots(figsize=(9, 2))
-plt.plot(x,y1)
-plt.plot(x,y2)
+plt.plot(x,y1,label='sin(x)')
+plt.plot(x,y2,label='cos(x)')
+
+ax.legend() # fontsize=9
 
 fig.savefig('figsincos.svg', dpi=600)
 plt.show()

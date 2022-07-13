@@ -23,9 +23,17 @@ with plt.style.context(['science','cn']):
     ax.set_xlabel(r'$\rm{The\;distance\;(mm)}$')
     ax.set_ylabel(r'$H_x\;\rm{(A/m)}$')
 
-    ax.set_xlim([0, max(data['磁化电流'])])
-    ax.set_ylim([0, 1.2*data.iloc[:,1:4].stack().max()])
+    # 设置图形范围
+    # ax.set_xlim([0, max(data['磁化电流'])])
+    # ax.set_ylim([0, 1.2*data.iloc[:,1:4].stack().max()])
     
+    # 设置图形在axes中的边界
+    ax.margins(0.1, 0.1)
+    
+    #plt.MaxNLocator()设置最多的刻度数量
+    ax.xaxis.set_major_locator(plt.MaxNLocator(5))
+    ax.yaxis.set_major_locator(plt.MaxNLocator(6))
+
     plt.yticks(fontproperties='Times New Roman')
     plt.xticks(fontproperties='Times New Roman')
  

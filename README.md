@@ -1,7 +1,7 @@
 # Matplotlib_Scistyle
 Matplotlib science style 
 
-Put the folder *stylelib* to your computer *C:\Users\\[username]\\.matplotlib* ,and you can use the science style easily by 
+Put the folder `stylelib` to your computer *C:\Users\\[username]\\.matplotlib* ,and you can use the science style easily by 
 
 ```python
 import matplotlib.pyplot as plt
